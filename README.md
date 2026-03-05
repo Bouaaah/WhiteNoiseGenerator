@@ -9,3 +9,14 @@ Le code est un sacré bordel, mais j'ai énormément appris sur l'utilisation de
 
 Si c'était à refaire, je ne me forcerais pas à utiliser l'architecture MVC comme je l'ai fait.
 Au lieu de ca, l'application serait responsable de tous les éléments comme la MainWindow, le MainComponenet, la AudioSource etc... et serait responsable de les orchestrer ensemble (un peu comme ce que fait le controleur dans le code actuel.
+
+## How to build
+
+```
+cmake -S . -B .\build -G "Ninja Multi-Config"
+```
+puis
+```
+cmake --build .\build --config Release
+```
+
